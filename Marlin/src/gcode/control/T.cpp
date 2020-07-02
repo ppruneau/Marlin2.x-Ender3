@@ -28,7 +28,7 @@
 #endif
 
 #if ENABLED(PRUSA_MMU2)
-  #include "../../feature/prusa_MMU2/mmu2.h"
+  #include "../../feature/mmu2/mmu2.h"
 #endif
 
 #define DEBUG_OUT ENABLED(DEBUG_LEVELING_FEATURE)
@@ -52,6 +52,9 @@ void GcodeSuite::T(const uint8_t tool_index) {
     DEBUG_ECHOLNPAIR(">>> T(", tool_index, ")");
     DEBUG_POS("BEFORE", current_position);
   }
+
+  // Count this command as movement / activity
+  reset_stepper_timeout();
 
   #if ENABLED(PRUSA_MMU2)
     if (parser.string_arg) {
