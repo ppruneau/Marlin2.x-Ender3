@@ -483,9 +483,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 60.10
-  #define DEFAULT_Ki 2.10
-  #define DEFAULT_Kd 81.09
+  #define DEFAULT_Kp 27.38
+  #define DEFAULT_Ki 2.21
+  #define DEFAULT_Kd 84.69
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -544,9 +544,9 @@
   //#define DEFAULT_bedKd 305.4
 
   //Personal PID on my Ender 3 after calibration on 2020-07-11 (with cable extension)
-  #define DEFAULT_bedKp 97.27
-  #define DEFAULT_bedKi 18.96
-  #define DEFAULT_bedKd 332.70
+  #define DEFAULT_bedKp 172.98
+  #define DEFAULT_bedKi 33.69
+  #define DEFAULT_bedKd 592.16
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
