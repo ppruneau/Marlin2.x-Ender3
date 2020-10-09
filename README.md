@@ -5,6 +5,8 @@ Check various branches for different configuration (SKR Mini E3 V1.2, SKR 1.4 Tu
 
 Mostly up to date, depending of the board I'm using at the moment.
 
+Hoping it to be a good "example" for everyone starting to build a fresh Marlin from scratch.
+
 ## Branch : SKR1.4Turbo-Marlin2.0.x
 
 Current setup in this configuration
