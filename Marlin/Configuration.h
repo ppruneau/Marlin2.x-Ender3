@@ -497,9 +497,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 27.38
-  #define DEFAULT_Ki 2.21
-  #define DEFAULT_Kd 84.69
+  #define DEFAULT_Kp 29.15
+  #define DEFAULT_Ki 3.02
+  #define DEFAULT_Kd 70.28
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -596,7 +596,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 300
+#define EXTRUDE_MAXLENGTH 500
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -765,7 +765,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.08, 79.92, 400, 480 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.45, 79.44, 399, 424 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1010,7 +1010,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -50, -16, -1.7 }
+#define NOZZLE_TO_PROBE_OFFSET { -54, -9, -1.3 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1397,7 +1397,7 @@
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
 //#define MANUAL_X_HOME_POS 0
-//#define MANUAL_Y_HOME_POS 0
+#define MANUAL_Y_HOME_POS -16
 //#define MANUAL_Z_HOME_POS 0
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
@@ -1527,12 +1527,12 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 205
-#define PREHEAT_1_TEMP_BED     50
+#define PREHEAT_1_TEMP_BED     55
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "PETG"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED      65
+#define PREHEAT_2_TEMP_BED      70
 #define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
 
 /**
