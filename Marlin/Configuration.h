@@ -497,9 +497,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 29.15
-  #define DEFAULT_Ki 3.02
-  #define DEFAULT_Kd 70.28
+  #define DEFAULT_Kp 40.39
+  #define DEFAULT_Ki 6.53
+  #define DEFAULT_Kd 62.42
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -765,7 +765,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.45, 79.44, 399, 424 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.72, 79.65, 402, 470 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1010,7 +1010,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -54, -9, -1.3 }
+#define NOZZLE_TO_PROBE_OFFSET { -54, -15, -1.15 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
