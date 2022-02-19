@@ -603,9 +603,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 40.39
-  #define DEFAULT_Ki 6.53
-  #define DEFAULT_Kd 62.42
+  #define DEFAULT_Kp 26.54
+  #define DEFAULT_Ki 2.09
+  #define DEFAULT_Kd 84.19
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -969,7 +969,7 @@
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 10, 60 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1214,7 +1214,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -54, -15, -1.15 }
+#define NOZZLE_TO_PROBE_OFFSET { -54, -15, -1.5 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
